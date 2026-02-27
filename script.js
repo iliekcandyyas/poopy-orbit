@@ -54,6 +54,14 @@ const planet = new Body(
     2
 );
 
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -64,5 +72,6 @@ function animate() {
 
     requestAnimationFrame(animate);
 }
+
 
 animate();
