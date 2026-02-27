@@ -8,8 +8,8 @@ body {
 }
 
 canvas {
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 100vh;
     display: block;
     margin: auto;
     background: black;
@@ -18,4 +18,5 @@ canvas {
 footer {
     margin-top: 20px;
     font-size: 14px;
+
 }
